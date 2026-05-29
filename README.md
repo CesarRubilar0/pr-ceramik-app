@@ -25,6 +25,8 @@ Esta es una landing page comercial simple pensada para exhibir piezas de arte en
 - `React` — biblioteca UI para renderizar componentes
 - `JavaScript` — lógica de la aplicación
 - `HTML` y `CSS` — estructura y estilos
+- `Vercel` — plataforma de despliegue y hosting
+- `Git` — control de versiones
 - `public/` — imágenes y recursos estáticos
 
 ## Estructura del proyecto
@@ -47,7 +49,17 @@ Esta es una landing page comercial simple pensada para exhibir piezas de arte en
 
 ## Despliegue
 
-La app puede desplegarse fácilmente en Vercel. Solo hay que conectar el repositorio y usar el comando de build:
+La app está desplegada en **Vercel**:
+
+🔗 **URL en vivo:** https://pr-ceramik-app.vercel.app
+
+La app puede desplegarse en Vercel. se actualiza con cada nuevo commit que se vaya generando con estos pasos basicos:
+- Detecta que es un proyecto Vite
+- Ejecuta `npm run build` 
+- Genera los archivos en la carpeta `dist/`
+- Sirve la app en producción
+
+Cada push a `main` en GitHub redeploya automáticamente.
 
 ```bash
 npm install
